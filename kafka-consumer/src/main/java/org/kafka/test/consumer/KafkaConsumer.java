@@ -9,7 +9,7 @@ public class KafkaConsumer {
      * 监听Topic主题,有消息就读取
      * @param message
      */
-    @KafkaListener(topics = {"zjl"},groupId = "gh")
+    @KafkaListener(topics = {"zjl"},groupId = "xx")
     public void receiveMessage(String message){
         System.out.println("消费者1"+message);
 
