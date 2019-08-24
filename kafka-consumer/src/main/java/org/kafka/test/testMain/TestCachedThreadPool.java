@@ -34,6 +34,10 @@ public class TestCachedThreadPool {
                 e.printStackTrace();
             }
             System.out.println(Thread.currentThread().getName() + "线程被调用了。"+j);
+            executorService.shutdown();
+            executorService.execute(()->{
+                System.out.println("第二个");
+            });
 //            while (true) {
 //                try {
 //
@@ -45,7 +49,7 @@ public class TestCachedThreadPool {
         });
         System.out.println("************* a" + i + " *************");
         }
-        executorService.shutdown();
+
         }
         }
 

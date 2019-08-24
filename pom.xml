@@ -19,6 +19,7 @@
         <module>kafka-producer</module>
         <module>kafka-consumer</module>
         <module>websocket</module>
+        <module>reflect</module>
     </modules>
 
     <dependencies>

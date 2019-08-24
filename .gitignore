@@ -8,3 +8,9 @@
 webSocket/target/
 out
 gen
+kafka-consumer/src/test/
+kafka-consumer/target/classes/org/kafka/test/testMain/
+kafka-consumer/target/generated-sources/
+kafka-producer/src/test/
+kafka-producer/target/generated-sources/
+websocket/src/test/
