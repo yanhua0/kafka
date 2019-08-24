@@ -18,7 +18,7 @@ public class WebSocketConfigurationWithSTOMP implements WebSocketMessageBrokerCo
     public void configureMessageBroker(MessageBrokerRegistry config) {
         // P2P should conf a /user  ;   broadcast should conf a /topic
         config.enableSimpleBroker("/topic", "/queue", "/user");
-        //这里配置了后台监听不需要/app连接
+        //这里配置了后台监听,不需要/app连接，后台只需要这么写  @MessageMapping("/v2/chat")
         config.setApplicationDestinationPrefixes("/app");   // Client to Server
         //这里配置stompClient.subscribe的user，后台使用了convertAndSendToUser
         config.setUserDestinationPrefix("/user");           // Server to Client

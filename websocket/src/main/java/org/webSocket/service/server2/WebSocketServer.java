@@ -1,4 +1,4 @@
-package org.webSocket.server2;
+package org.webSocket.service.server2;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

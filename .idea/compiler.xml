@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="kafkaconsumer" />
         <module name="kafkaproducer" />
-        <module name="webSocket" />
+        <module name="websocket" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,7 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="kafkaconsumer" options="-parameters" />
       <module name="kafkaproducer" options="-parameters" />
-      <module name="webSocket" options="-parameters" />
+      <module name="websocket" options="-parameters" />
     </option>
   </component>
 </project>

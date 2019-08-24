@@ -1,4 +1,4 @@
-package org.webSocket.server;
+package org.webSocket.service.server;
 
 import javax.websocket.*;
 import java.io.IOException;

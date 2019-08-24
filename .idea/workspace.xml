@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="939c0fa3-b806-454a-a467-5528d93ed034" name="Default Changelist" comment="xx">
-      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/testMain/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/testMain/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/testMain/TestCachedThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/WebSocketApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/server/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/server2/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/web/WebSocketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/resources/static/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/resources/static/index3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/resources/static/stomp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/resources/static/stomp1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/src/main/resources/static/stomp2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webSocket/webSocket.iml" afterDir="false" />
+    <list default="true" id="939c0fa3-b806-454a-a467-5528d93ed034" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-consumer/target/classes/org/kafka/test/consumer/KafkaConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer/target/classes/org/kafka/test/consumer/KafkaConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-consumer/target/classes/META-INF/kafkaconsumer.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-producer/target/classes/META-INF/kafkaproducer.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/WebSocketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/WebSocketApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/server/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/service/server/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/server2/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/service/server2/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/web/WebSocketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/web/WebSocketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/resources/static/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/resources/static/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/index3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/resources/static/stomp.html" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/resources/static/stomp1.html" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/stomp1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/src/main/resources/static/stomp2.html" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/stomp2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webSocket/webSocket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/websocket.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,25 +47,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/index.html">
+        <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/web/WebSocketController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="106">
+              <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/pom.xml">
+        <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocket/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
@@ -75,59 +77,56 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/stomp1.html">
+        <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="-540">
               <caret line="23" column="37" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/index3.html">
+        <entry file="file://$PROJECT_DIR$/kafka-producer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+            <state relative-caret-position="323">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/index2.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-messaging/5.0.7.RELEASE/spring-messaging-5.0.7.RELEASE.jar!/org/springframework/messaging/handler/annotation/SendTo.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/server/WebSocketServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+            <state relative-caret-position="87">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2551#2552#0" expanded="true" />
-                <element signature="e#2596#2597#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/WebSocketApplication.java">
+        <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/config/WebSocketConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="95">
+              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/WebSocketApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -137,9 +136,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/stomp.html">
+        <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="228">
               <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
             </state>
           </provider>
@@ -179,7 +178,6 @@
         <option value="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/web/ConsumerController.java" />
         <option value="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/producer/consumerTest.java" />
         <option value="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/consumer/consumerTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaPru.java" />
         <option value="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaProducer.java" />
         <option value="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/consumer/ConsumerTest.java" />
@@ -215,6 +213,13 @@
         <option value="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java" />
         <option value="$PROJECT_DIR$/webSocket/src/main/resources/static/stomp2.html" />
         <option value="$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/web/WebSocketController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/service/WebSocketServer.java" />
+        <option value="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/service/server2/WebSocketServer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/web/WebSocketController.java" />
+        <option value="$PROJECT_DIR$/websocket/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java" />
       </list>
     </option>
   </component>
@@ -244,8 +249,20 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="kafka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="kafka-consumer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="kafka-producer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="webSocket" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="webSocket" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -275,42 +292,42 @@
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="webSocket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -320,7 +337,7 @@
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -330,17 +347,17 @@
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="webSocket" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -350,7 +367,7 @@
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -358,18 +375,11 @@
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kafka" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,14 +397,14 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566627842474" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566634722352" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpringBoot/blog1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -481,7 +491,7 @@
       </method>
     </configuration>
     <configuration name="WebSocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="webSocket" />
+      <module name="websocket" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.webSocket.*" />
@@ -529,7 +539,7 @@
       <workItem from="1566055088944" duration="39000" />
       <workItem from="1566482170890" duration="1819000" />
       <workItem from="1566612628791" duration="8805000" />
-      <workItem from="1566627872094" duration="214000" />
+      <workItem from="1566627872094" duration="3778000" />
     </task>
     <task id="LOCAL-00001" summary="xx">
       <created>1565706706538</created>
@@ -538,11 +548,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565706706538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="websocket的学习">
+      <created>1566628296312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566628296312</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29636000" />
+    <option name="totallyTimeSpent" value="33200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -557,7 +574,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="22" y="221" width="1492" height="382" id="Run" order="2" weight="0.296034" />
+      <window_info anchor="bottom" x="22" y="221" width="1492" height="382" id="Run" order="2" weight="0.9575071" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33144477" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -571,7 +588,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.33569404" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.3328446" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -589,7 +606,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="xx" />
-    <option name="LAST_COMMIT_MESSAGE" value="xx" />
+    <MESSAGE value="websocket的学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="websocket的学习" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kafka-consumer/pom.xml">
@@ -598,9 +616,6 @@
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-producer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/kafka-consumer/src/main/java/DemoApplication.java" />
     <entry file="jar://$PROJECT_DIR$/../../repository/org/apache/kafka/kafka-clients/1.0.1/kafka-clients-1.0.1.jar!/org/apache/kafka/clients/producer/ProducerConfig.class">
@@ -821,22 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/server2/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="56" column="47" lean-forward="true" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#3106#3107#0" expanded="true" />
-            <element signature="e#3162#3163#0" expanded="true" />
-            <element signature="e#3207#3208#0" expanded="true" />
-            <element signature="e#3263#3264#0" expanded="true" />
-            <element signature="e#3308#3309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-messaging/5.0.7.RELEASE/spring-messaging-5.0.7.RELEASE.jar!/org/springframework/messaging/simp/SimpMessagingTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -844,67 +843,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/config/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/stomp2.html">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1102">
           <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/web/WebSocketController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/stomp1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/index3.html">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/index3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/index2.html">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
@@ -918,21 +878,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/server/WebSocketServer.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/service/server2/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/java/org/webSocket/WebSocketApplication.java">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/service/server/WebSocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="1368">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-producer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/target/classes/org/webSocket/config2/WebSocketConfigurationWithSTOMP.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <folding>
+            <element signature="e#0#1106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/WebSocketApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -940,31 +975,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/stomp.html">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/web/WebSocketController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="106">
+          <caret line="65" column="31" lean-forward="true" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/src/main/resources/static/index.html">
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/config2/WebSocketConfigurationWithSTOMP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSocket/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="87">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,7 +1047,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>kafkaproducer</last-edited>
+          <last-edited>kafka</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

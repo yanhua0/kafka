@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.webSocket.server.WebSocketServer;
+import org.webSocket.service.server.WebSocketServer;
 
 import javax.annotation.Resource;
 import java.io.IOException;
@@ -68,7 +68,7 @@ public class WebSocketController {
     @SendTo("/topic/webSocketTopic")
     public String gameInfo(String message) {
         //simpMessagingTemplate.convertAndSend("/topic/webSocketTopic", message);
-        System.out.println(message);
+        System.out.println("群聊{}"+message);
         return message;
     }
 
