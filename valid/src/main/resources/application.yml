@@ -7,3 +7,8 @@ server:
     prefix: classpath:/templates/
     suffix: .html
     enabled: true
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+

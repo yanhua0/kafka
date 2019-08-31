@@ -8,7 +8,7 @@ import javax.validation.constraints.NotBlank;
 @Service
 @Validated
 public class UsersService {
-    public void u(@NotBlank(message = "错的") String s2){
+    public void u(@NotBlank(message = "s2不能为空") String s2){
         System.out.println("s2");
     }
 }
