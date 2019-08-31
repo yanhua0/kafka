@@ -9,6 +9,7 @@
         <module name="kafkaconsumer" />
         <module name="kafkaproducer" />
         <module name="reflect" />
+        <module name="valid" />
         <module name="websocket" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="kafkaconsumer" options="-parameters" />
       <module name="kafkaproducer" options="-parameters" />
       <module name="reflect" options="-parameters" />
+      <module name="valid" options="-parameters" />
       <module name="websocket" options="-parameters" />
     </option>
   </component>
