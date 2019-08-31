@@ -2,3 +2,8 @@ server:
   port: 8080
   servlet:
     context-path: /valid
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    enabled: true
