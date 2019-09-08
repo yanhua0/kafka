@@ -6,16 +6,16 @@ import io.swagger.annotations.ApiModelProperty;
 @ApiModel("users接轨")
 public class Users {
     @ApiModelProperty("用户名")
-    private String username;
+    private String userName;
     @ApiModelProperty("用户名")
     private String password;
 
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -26,16 +26,5 @@ public class Users {
         this.password = password;
     }
 
-    public Users(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
 
-    @Override
-    public String toString() {
-        return "Users{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
 }
