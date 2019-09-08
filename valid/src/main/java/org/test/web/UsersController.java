@@ -3,7 +3,6 @@ package org.test.web;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -34,9 +33,9 @@ public class UsersController {
 
     @ApiOperation("测试users")
     @GetMapping("/test")
-    public String test2(@ModelAttribute Users users, Model model) {
+    public String test2(@ModelAttribute Users users) {
         //@ModelAttribute 告诉spring这个是模型数据,自动model.addAttribute
-        users.setPassword("123456");
+        //users.setPassword("123456");
         System.out.println(users);
         return "index";
     }
@@ -46,7 +45,7 @@ public class UsersController {
      */
     @ModelAttribute("users")
     public Users print(Users users) {
-        users.setPassword("邹");//这里赋值会被下个url方法的请求数据所获取到
+       // users.setPassword("邹");//这里赋值会被下个url方法的请求数据所获取到
         return users;
     }
 }

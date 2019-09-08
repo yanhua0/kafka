@@ -21,9 +21,11 @@
         <module>websocket</module>
         <module>reflect</module>
         <module>valid</module>
+        <module>gexin</module>
     </modules>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
