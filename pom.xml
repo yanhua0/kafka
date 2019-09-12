@@ -22,6 +22,7 @@
         <module>reflect</module>
         <module>valid</module>
         <module>gexin</module>
+        <module>cookies</module>
     </modules>
 
     <dependencies>
