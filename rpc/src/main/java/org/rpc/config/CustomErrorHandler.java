@@ -1,7 +1,9 @@
 package org.rpc.config;
 
 import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.ResponseErrorHandler;
+import org.springframework.web.client.RestClientException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,21 +12,31 @@ import java.io.InputStreamReader;
 
 public class CustomErrorHandler implements ResponseErrorHandler {
 
-    @Override
-    public boolean hasError(ClientHttpResponse response) throws IOException {
-        //true关闭restTemplate的异常抛出执行handleError处理异常,false打开restTemplcate异常抛出
-        return true;
-    }
+    private ResponseErrorHandler errorHandler = new DefaultResponseErrorHandler();
 
+    /**
+     * 不能处理connected refused的异常
+     * @param response
+     * @throws IOException
+     */
     @Override
     public void handleError(ClientHttpResponse response) throws IOException {
+        String body = convertStreamToString(response.getBody());
         System.out.println(response.getStatusCode());
         System.out.println(response.getStatusText());
-        System.out.println(convertStreamToString(response.getBody()));
-        String result = convertStreamToString(response.getBody());
-        throw new RuntimeException(result);
+        try {
+            errorHandler.handleError(response);
+        } catch (RestClientException scx) {
+            throw new RuntimeException(body);
+        }
     }
 
+    @Override
+    public boolean hasError(ClientHttpResponse response) throws IOException {
+        return errorHandler.hasError(response);
+    }
+
+    // inputStream 装换为 string
     private String convertStreamToString(InputStream is) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         StringBuilder sb = new StringBuilder();
