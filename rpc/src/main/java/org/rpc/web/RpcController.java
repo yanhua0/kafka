@@ -17,9 +17,13 @@ public class RpcController {
     @GetMapping("/rpc")
     public Object r() {
         //restTemplate.setErrorHandler(new CustomErrorHandler());
-        ParameterizedTypeReference responseType=new ParameterizedTypeReference<Result<String>>() {
-        };
-        ResponseEntity<Result<String>> response=restTemplate.exchange("http://localhost:8000/valid/s10?s2=123", HttpMethod.GET,null,responseType);
-        return response.getBody();
+        try {
+            ParameterizedTypeReference responseType=new ParameterizedTypeReference<Result<String>>() {
+            };
+            ResponseEntity<Result<String>> response=restTemplate.exchange("http://localhost:8000/valid/s4?s2=123", HttpMethod.GET,null,responseType);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
 }
