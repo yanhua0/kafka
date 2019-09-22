@@ -9,6 +9,8 @@ import javax.validation.constraints.NotBlank;
 @Validated
 public class UsersService {
     public void u(@NotBlank(message = "s2不能为空") String s2){
-        System.out.println("s2");
+
+        throw new RuntimeException("错误的异常");
+
     }
 }

@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) {
         List<User> s = new ArrayList<>();
         User user = new User();
-
         user.setPassword("123123");
         user.setUsername1("124");
         s.add(user);

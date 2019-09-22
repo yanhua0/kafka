@@ -11,6 +11,7 @@
         <module name="kafkaconsumer" />
         <module name="kafkaproducer" />
         <module name="reflect" />
+        <module name="rpc" />
         <module name="valid" />
         <module name="websocket" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="kafkaconsumer" options="-parameters" />
       <module name="kafkaproducer" options="-parameters" />
       <module name="reflect" options="-parameters" />
+      <module name="rpc" options="-parameters" />
       <module name="valid" options="-parameters" />
       <module name="websocket" options="-parameters" />
     </option>

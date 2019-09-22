@@ -23,10 +23,15 @@
         <module>valid</module>
         <module>gexin</module>
         <module>cookies</module>
+        <module>rpc</module>
     </modules>
 
     <dependencies>
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
