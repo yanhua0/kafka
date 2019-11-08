@@ -16,6 +16,7 @@ import java.lang.reflect.Proxy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 
 @RestController
@@ -35,12 +36,15 @@ public class RpcController {
     public String r2() throws NoSuchFieldException, IllegalAccessException {
         String ss = "xxx";
         System.out.println(rpcBean);
-        
+
         Class clazz = RpcTest.class;
         Method[] methods=clazz.getDeclaredMethods();
         List<ReqUrl> reqUrls=new ArrayList<>();
         for (Method method : methods) {
-           reqUrls.add(method.getAnnotation(ReqUrl.class));
+            ReqUrl reqUrl=method.getAnnotation(ReqUrl.class);
+            if(Objects.nonNull(reqUrl)) {
+                reqUrls.add(reqUrl);
+            }
         }
        // Annotation annotation[] = clazz.getAnnotationsByType(ReqUrl.class);
         for (ReqUrl reqUrl: reqUrls) {
