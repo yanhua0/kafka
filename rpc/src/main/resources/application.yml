@@ -9,4 +9,12 @@ server:
     restart:
       enabled: true
       additional-paths: src/main/java
+rpc:
+  service:
+    bserver1:
+       ip: "123"
+       api: "api"
+    bserver2:
+       ip: "123"
+       api: "api"
 

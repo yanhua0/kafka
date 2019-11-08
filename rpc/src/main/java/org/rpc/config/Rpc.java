@@ -13,4 +13,5 @@ public class Rpc {
         restTemplate.setErrorHandler(new CustomErrorHandler());
         return restTemplate;
     }
+
 }
