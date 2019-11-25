@@ -13,6 +13,7 @@
         <module name="reflect" />
         <module name="rpc" />
         <module name="valid" />
+        <module name="visitor" />
         <module name="websocket" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="reflect" options="-parameters" />
       <module name="rpc" options="-parameters" />
       <module name="valid" options="-parameters" />
+      <module name="visitor" options="-parameters" />
       <module name="websocket" options="-parameters" />
     </option>
   </component>

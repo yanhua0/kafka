@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/reflect" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rpc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/valid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/visitor" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/websocket" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

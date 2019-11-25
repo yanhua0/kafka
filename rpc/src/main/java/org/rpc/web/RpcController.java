@@ -65,7 +65,7 @@ public class RpcController {
         Class clazz = RpcBean.class;
         System.out.println(clazz.getName());
         Method[] method=clazz.getDeclaredMethods();
-      ReqUrl annotation = method[0].getAnnotation(ReqUrl.class);
+        ReqUrl annotation = method[0].getAnnotation(ReqUrl.class);
 //System.out.println(annotation.path());
             //System.out.println(annotation.length);
 

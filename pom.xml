@@ -24,6 +24,7 @@
         <module>gexin</module>
         <module>cookies</module>
         <module>rpc</module>
+        <module>visitor</module>
     </modules>
 
     <dependencies>
