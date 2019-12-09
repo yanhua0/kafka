@@ -17,7 +17,11 @@ public class ProducerController {
     private KafkaTemplate<String,String> kafkaTemplate;
     @GetMapping("/kafkaPro")
     public Object con(String message) {
-        kafkaTemplate.send("zjl",message);
-        return message;
+        kafkaTemplate.send("test2",message);
+     /*   ScheduledExecutorService scheduledExecutorService= Executors.newScheduledThreadPool(30);
+        Runnable runnable= () -> kafkaTemplate.send("zjl","消息");
+        scheduledExecutorService.scheduleAtFixedRate(runnable,1,1, TimeUnit.SECONDS);
+*/
+       return message;
     }
 }

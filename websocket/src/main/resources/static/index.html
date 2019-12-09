@@ -15,7 +15,7 @@
         } else {
             console.log("您的浏览器支持WebSocket");
             //这里指定给那个用户发送
-            socket = new WebSocket("ws://localhost:8082/websocket/websocket/1");
+            socket = new WebSocket("ws://localhost:8082/websocket/websocket");
             //打开事件
             socket.onopen = function() {
                 console.log("webSocket 已打开");
@@ -47,6 +47,23 @@
             $("#btnClose").click(function() {
                 socket.close();
             });
+            $("#btnOpen").click(function() {
+                for(var i=0;i<50;i++){
+                    socket = new WebSocket("ws://localhost:8082/websocket/websocket");
+                    //打开事件
+                    socket.onopen = function() {
+                        console.log("webSocket 已打开");
+                        //socket.send("这是来自客户端的消息" + location.href + new Date());
+                    };
+                    //获得消息事件
+                    socket.onmessage = function(msg) {
+                        console.log("服务器发来的消息："+msg.data);
+                        //发现消息进入    调后台获取
+                        //getCallingList();
+                    };
+                }
+
+            });
         }
     });
 </script>
@@ -55,5 +72,6 @@
 <button id="btnSend">推送消息</button>
 ----------------------
 <button id="btnClose">关闭连接</button>
+<button id="btnOpen">新的连接</button>
 </body>
 </html>

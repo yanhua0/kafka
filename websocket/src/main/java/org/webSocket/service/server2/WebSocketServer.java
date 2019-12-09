@@ -2,25 +2,19 @@ package org.webSocket.service.server2;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.stereotype.Component;
+import org.webSocket.Message;
 
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.Map;
+import java.util.concurrent.*;
 
-@Component
+//@Component
 //访问服务端的url地址
-@ServerEndpoint(value = "/websocket/{id}")
+//@ServerEndpoint(value = "/websocket/{id}")
 public class WebSocketServer {
-    private static int onlineCount = 0;
-    private static ConcurrentHashMap<String, WebSocketServer> webSocketSet = new ConcurrentHashMap<>();
 
-    //与某个客户端的连接会话，需要通过它来给客户端发送数据
-    private Session session;
-    private static Logger log = LogManager.getLogger(WebSocketServer.class);
-    private String id = "";
     /**
      * 连接建立成功调用的方法*/
     @OnOpen
@@ -35,8 +29,43 @@ public class WebSocketServer {
         } catch (IOException e) {
             log.error("websocket IO异常");
         }
-    }
+      //  Function<String,Void> s=this::ss;
+        synchronized (session.getAsyncRemote()) {
 
+        }
+
+
+
+    }
+public static void main(String[] args){
+
+   ExecutorService executorService=Executors.newFixedThreadPool(3);
+
+    final String[] ss = {"123","1234"};
+       for(String s:ss){
+
+           executorService.execute(()->{
+
+               synchronized (s){
+                   try {
+                       System.out.println(s);
+                       Thread.sleep(Long.parseLong("2000"));
+                   } catch (Exception e) {
+                       e.printStackTrace();
+                   }
+               }
+
+
+           });
+
+
+       }
+
+
+
+
+
+}
     /**
      * 连接关闭调用的方法
      */
@@ -107,7 +136,7 @@ public class WebSocketServer {
      * @param message
      * @throws IOException
      */
-    public void sendtoAll(String message) throws IOException {
+    public void sendtoAll(String message) {
         for (String key : webSocketSet.keySet()) {
             try {
                 webSocketSet.get(key).sendMessage(message);
@@ -129,4 +158,53 @@ public class WebSocketServer {
     public static synchronized void subOnlineCount() {
         WebSocketServer.onlineCount--;
     }
+
+    public void addQueue(String content,String id) throws InterruptedException {
+        Map<String,Session>  sessionMap=user.get(id);
+        sessionMap.forEach((x,y)->{
+            try {
+            //    map.get(y).put(content);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+
+
+    }
+    public void sendMessage(Message message){
+map.put(message.getSession().getId(),session.getAsyncRemote().sendText(message.getMessage()));
+
+
+    }
+    public void broast(String content,String id){
+
+    }
+    private static int onlineCount = 0;
+    private static ConcurrentHashMap<String, WebSocketServer> webSocketSet = new ConcurrentHashMap<>();
+
+    //与某个客户端的连接会话，需要通过它来给客户端发送数据
+    private Session session;
+    private static Logger log = LogManager.getLogger(WebSocketServer.class);
+    private String id = "";
+    public static Map<String, Map<String,Session>> user=new ConcurrentHashMap<>();
+    public static Map<String, Session> stringSessionMap=new ConcurrentHashMap<>();
+  //  public static Map<String, Consumer<Message>> con=new ConcurrentHashMap<>();
+    public static Map<String,Future<Void>> map=new ConcurrentHashMap<>();
+    public static BlockingQueue<Message> blockingQueue=new LinkedBlockingQueue<>(2000);
+
+   public void consumer() throws InterruptedException {
+
+       ExecutorService executorService=Executors.newFixedThreadPool(stringSessionMap.size());
+user.remove("213");
+                map.forEach((key,value)->{
+                    executorService.execute(()->{
+
+                    });
+
+                });
+
+
+
+   }
+
 }
