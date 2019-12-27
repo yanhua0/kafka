@@ -1,7 +1,5 @@
 package org.socket.client;
 
-import org.socket.entity.User;
-
 import java.io.*;
 import java.net.Socket;
 
@@ -17,10 +15,11 @@ public class Client {
             //根据输入输出流和服务端连接
             OutputStream outputStream=socket.getOutputStream();//获取一个输出流，向服务端发送信息
         ObjectOutputStream objectOutputStream=new ObjectOutputStream(outputStream);
-            User user=new User();
+           /* User user=new User();
             user.setUserId("123");
-            user.setName("!23213");
-            objectOutputStream.writeObject(user);
+            user.setName("!23213");*/
+           String ss="123";
+            objectOutputStream.writeObject(ss);
          /*   PrintWriter printWriter=new PrintWriter(outputStream);//将输出流包装成打印流
             printWriter.print("服务端你好，我是Balla_兔子");
             printWriter.flush();*/

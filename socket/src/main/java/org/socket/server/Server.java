@@ -1,7 +1,5 @@
 package org.socket.server;
 
-import org.socket.entity.User;
-
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -22,9 +20,10 @@ public class Server {
                 InputStream inputStream = socket.getInputStream();//得到一个输入流，接收客户端传递的信息
                 ObjectInputStream obj = new ObjectInputStream(inputStream);
                 //  ObjectInputStream ois = new ObjectInputStream(inputStream);
-                User user = (User) obj.readObject();
+               // User user = (User) obj.readObject();
+                String uss= (String) obj.readObject();
                 System.out.println("已接收到客户端连接");
-                System.out.println("服务端接收到客户端信息：" + user
+                System.out.println("服务端接收到客户端信息：" + uss
                         + ",当前客户端ip为：" + socket.getInetAddress().getHostAddress());
 
            /* InputStreamReader inputStreamReader=new InputStreamReader(inputStream);//提高效率，将自己字节流转为字符流

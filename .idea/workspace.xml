@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="939c0fa3-b806-454a-a467-5528d93ed034" name="Default Changelist" comment="topicPartitions = { @TopicPartition(topic = &quot;test2&quot;, partitions = { &quot;0&quot; }) }使用">
-      <change afterPath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaConsumerSec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/RedisApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/service/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/src/test/java/org/redis/test/RedisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="939c0fa3-b806-454a-a467-5528d93ed034" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/consumer/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer/src/main/java/org/kafka/test/consumer/KafkaConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-consumer/target/classes/org/kafka/test/consumer/KafkaConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer/target/classes/org/kafka/test/consumer/KafkaConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/web/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/web/ProducerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-producer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-producer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-producer/target/classes/org/kafka/test/config/KafkaConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/target/classes/org/kafka/test/config/KafkaConsumer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-producer/target/classes/org/kafka/test/web/ProducerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/target/classes/org/kafka/test/web/ProducerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -59,15 +40,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/data/spring-data-redis/2.1.9.RELEASE/spring-data-redis-2.1.9.RELEASE.jar!/org/springframework/data/redis/connection/lettuce/LettuceStringCommands.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10830">
-              <caret line="603" selection-start-line="603" selection-end-line="603" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kafka-producer/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,11 +91,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="189">
+              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -150,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="209">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -253,8 +234,8 @@
         <option value="$PROJECT_DIR$/redis/pom.xml" />
         <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java" />
         <option value="$PROJECT_DIR$/redis/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java" />
         <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java" />
+        <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java" />
         <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java" />
       </list>
     </option>
@@ -379,7 +360,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/kafka-producer/src/test/java/ExecutorFactory.java&#10;G:/JavaWeb/studyJava/kafka/kafka-producer/src/test/java/Main.java" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577448255814" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577448424254" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -598,7 +579,7 @@
       <workItem from="1576853092524" duration="276000" />
       <workItem from="1576989039555" duration="1224000" />
       <workItem from="1577002491022" duration="1330000" />
-      <workItem from="1577446987616" duration="1062000" />
+      <workItem from="1577446987616" duration="1389000" />
     </task>
     <task id="LOCAL-00001" summary="xx">
       <created>1565706706538</created>
@@ -691,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575903173923</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="socket编程">
+      <created>1577448287445</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577448287445</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -727,7 +715,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142107000" />
+    <option name="totallyTimeSpent" value="142434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -752,7 +740,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" x="22" y="221" width="1492" height="382" id="Run" order="2" weight="0.42857143" />
+      <window_info anchor="bottom" x="22" y="221" width="1492" height="382" id="Run" order="2" visible="true" weight="0.24313186" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4271978" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -834,18 +822,14 @@
     <MESSAGE value="restTemplate的异常处理" />
     <MESSAGE value="反射修改方法上的注解值" />
     <MESSAGE value="topicPartitions = { @TopicPartition(topic = &quot;test2&quot;, partitions = { &quot;0&quot; }) }使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="topicPartitions = { @TopicPartition(topic = &quot;test2&quot;, partitions = { &quot;0&quot; }) }使用" />
+    <MESSAGE value="socket编程" />
+    <option name="LAST_COMMIT_MESSAGE" value="socket编程" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kafka-producer/target/classes/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kafka-producer/target/classes/org/kafka/test/config/Consumer2.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-171">
@@ -1260,16 +1244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1287,10 +1261,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        <state relative-caret-position="209">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
