@@ -1,13 +1,13 @@
 package org.kafka.test.config;
 
-import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.common.serialization.StringDeserializer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
-import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
-import org.springframework.kafka.config.KafkaListenerContainerFactory;
-import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
+import org.springframework.kafka.core.DefaultKafkaProducerFactory;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.kafka.core.ProducerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,31 +15,40 @@ import java.util.Map;
 @Configuration
 @EnableKafka
 public class KafkaConfig {
+
+
+
+    public Map<String, Object> producerConfigs() {
+
+        Map<String, Object> props = new HashMap<>();
+        // list of host:port pairs used for establishing the initial connections
+        // to the Kakfa cluster
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.254.253:9092");
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        // value to block, after which it will throw a TimeoutException
+        props.put(ProducerConfig.MAX_BLOCK_MS_CONFIG, 5000);
+
+//        props.put(ProducerConfig.ACKS_CONFIG, "all");
+//        props.put(ProducerConfig.RETRIES_CONFIG, 1);
+//        props.put(ProducerConfig.BATCH_SIZE_CONFIG, 16384);
+//        props.put(ProducerConfig.LINGER_MS_CONFIG, 1);
+//        props.put(ProducerConfig.BUFFER_MEMORY_CONFIG, 33554432);
+
+        return props;
+    }
     @Bean
-    KafkaListenerContainerFactory<?> batchFactory() {
-        ConcurrentKafkaListenerContainerFactory<String, String> factory = new
-                ConcurrentKafkaListenerContainerFactory<>();
-        factory.setConsumerFactory(new DefaultKafkaConsumerFactory<>(consumerConfigs()));
-        factory.setConcurrency(1);
-        factory.setBatchListener(true); // 开启批量监听
-        return factory;
+    public ProducerFactory<String, String> producerFactory() {
+        return new DefaultKafkaProducerFactory<>(producerConfigs());
     }
 
     @Bean
-    public Map<String, Object> consumerConfigs() {
-        Map<String, Object> props = new HashMap<>();
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "zz");
-        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "false");
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-        props.put(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, 100); //设置每次接收Message的数量
-        props.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, "100");
-        props.put(ConsumerConfig.SESSION_TIMEOUT_MS_CONFIG, 120000);
-        props.put(ConsumerConfig.REQUEST_TIMEOUT_MS_CONFIG, 180000);
-        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-        props.put(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, 50);
-        return props;
+    public KafkaTemplate<String, String> kafkaOutTemplate() {
+        return new KafkaTemplate<String, String>(producerFactory());
     }
+
+
+
 
 
 

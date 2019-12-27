@@ -25,6 +25,8 @@
         <module>cookies</module>
         <module>rpc</module>
         <module>visitor</module>
+        <module>redis</module>
+        <module>socket</module>
     </modules>
 
     <dependencies>

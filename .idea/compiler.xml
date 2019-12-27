@@ -10,8 +10,10 @@
         <module name="gexin" />
         <module name="kafkaconsumer" />
         <module name="kafkaproducer" />
+        <module name="redis" />
         <module name="reflect" />
         <module name="rpc" />
+        <module name="socket" />
         <module name="valid" />
         <module name="visitor" />
         <module name="websocket" />
@@ -24,8 +26,10 @@
       <module name="gexin" options="-parameters" />
       <module name="kafkaconsumer" options="-parameters" />
       <module name="kafkaproducer" options="-parameters" />
+      <module name="redis" options="-parameters" />
       <module name="reflect" options="-parameters" />
       <module name="rpc" options="-parameters" />
+      <module name="socket" options="-parameters" />
       <module name="valid" options="-parameters" />
       <module name="visitor" options="-parameters" />
       <module name="websocket" options="-parameters" />

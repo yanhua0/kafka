@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 80
   servlet:
     context-path: /producer
 spring:
@@ -10,21 +10,21 @@ spring:
       enabled: true
       additional-paths: src/main/java
 
-kafka:
-  bootstrap-servers: localhost:9092
-  producer:
-    retries: 0
-    batch-size: 16384
-    buffer-memory: 33554432
-    key-serializer: org.apache.kafka.common.serialization.StringSerializer
-    value-serializer: org.apache.kafka.common.serialization.StringSerializer
-  consumer:
-    enable-auto-commit: false
-    auto-commit-interval: 100ms
-    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    properties:
-      session.timeout.ms: 15000
-    group-id: zjl
-    concurrency: 2
+  kafka:
+    bootstrap-servers: 172.20.90.28:9092
+    producer:
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.BytesDeserializer
+      value-serializer: org.apache.kafka.common.serialization.BytesDeserializer
+    consumer:
+      enable-auto-commit: false
+      auto-commit-interval: 100ms
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        session.timeout.ms: 15000
+      group-id: zjl
+      concurrency: 2
 
