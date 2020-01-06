@@ -40,14 +40,16 @@ public class Server {
             }*/
 
                 OutputStream outputStream = socket.getOutputStream();//获取一个输出流，向服务端发送信息
-                PrintWriter printWriter = new PrintWriter(outputStream);//将输出流包装成打印流
+                ObjectOutputStream obj2=new ObjectOutputStream(outputStream);
+                 obj2.writeObject(user);
+               /* PrintWriter printWriter = new PrintWriter(outputStream);//将输出流包装成打印流
                 printWriter.print("你好，服务端已接收到您的信息");
-                printWriter.flush();
+                printWriter.flush();*/
                 socket.shutdownOutput();//关闭输出流
 
 
                 //关闭相对应的资源
-                printWriter.close();
+               // printWriter.close();
                 outputStream.close();
                 // bufferedReader.close();
                 inputStream.close();

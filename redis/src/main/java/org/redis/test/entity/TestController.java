@@ -1,8 +1,7 @@
 package org.redis.test.entity;
 
-import org.redis.test.service.RedisService;
+import org.redis.test.cache.CacheService;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -11,18 +10,46 @@ import java.util.concurrent.Executors;
 
 @RestController
 public class TestController {
+//    @Resource
+//    private RedisService redisService;
     @Resource
-    private RedisService redisService;
+    private CacheService cacheService;
 
-    @GetMapping("/redis/{id}")
-    public void redis(@PathVariable("id") Integer id) {
- ExecutorService executorService = Executors.newFixedThreadPool(1);
-        for (int i = 0; i < id; i++) {
-         executorService.execute(() -> {
+//    @GetMapping("/redis/{id}")
+//    public void redis(@PathVariable("id") Integer id) {
+//        System.out.println(redisService.get("7"));
+//        redisService.set("redis_key","123333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333");
+// ExecutorService executorService = Executors.newFixedThreadPool(500);
+//        for (int i = 0; i < id; i++) {
+//         executorService.execute(() -> {
+//              long start=System.currentTimeMillis();
+//              redisService.get("redis_key");
+//              long e=System.currentTimeMillis();
+//              if(e-start>100)
+//              System.out.println(e-start);
+//         });
+//
+//        }
+//    }
+   @GetMapping("/cache")
+    public String ss(int  s){
+ExecutorService executorService=Executors.newFixedThreadPool(1000);
+       for (int i = 0; i < s; i++) {
+           executorService.execute(()->{
+               long start=System.currentTimeMillis();
+               cacheService.ss("s");
+               long e=System.currentTimeMillis();
+               System.out.println(e-start);
+               if(e-start>100)
+                   System.out.println(e-start);
+           });
 
-                redisService.set("redis_key","123");
-              System.out.println(redisService.get("redis_key"));
-         });
-        }
+       }
+        return  cacheService.ss("123");
+   }
+    @GetMapping("/update")
+    public String ss2(String s){
+
+        return  cacheService.update(s);
     }
 }
