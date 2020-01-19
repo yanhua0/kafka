@@ -22,7 +22,18 @@ public class CookieController {
         return HeaderUtis.getHeader();
 
     }
-
+    @GetMapping("/exec")
+    public void exec(){
+        System.out.println("123");
+        executorService.execute(()->{
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("exec");
+        });
+    }
     @PostMapping("/post")
     public String post(Users users) {
       return users.toString();

@@ -1,6 +1,7 @@
 package org.redis.test.entity;
 
 import org.redis.test.cache.CacheService;
+import org.springframework.cache.CacheManager;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +15,8 @@ public class TestController {
 //    private RedisService redisService;
     @Resource
     private CacheService cacheService;
+    @Resource
+    private CacheManager cacheManager;
 
 //    @GetMapping("/redis/{id}")
 //    public void redis(@PathVariable("id") Integer id) {
@@ -51,5 +54,10 @@ ExecutorService executorService=Executors.newFixedThreadPool(1000);
     public String ss2(String s){
 
         return  cacheService.update(s);
+    }
+    @GetMapping("/del")
+    public void ss3(String s){
+
+        cacheService.delte(s);
     }
 }

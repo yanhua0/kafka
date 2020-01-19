@@ -1,5 +1,6 @@
 package org.redis.test.cache;
 
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -12,10 +13,15 @@ public class CacheService {
     @Cacheable(value = "cache", key = "#ss+''")
     public String ss(String ss) {
         return ss;
+
     }
 
     @CachePut(value = "cache", key = "#ss+''")
     public String update(String ss) {
         return "修改";
+    }
+    @CacheEvict(value = "cache", key = "#ss+''")
+    public void delte(String ss){
+
     }
 }

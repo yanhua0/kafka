@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939c0fa3-b806-454a-a467-5528d93ed034" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/cache/CacheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/src/test/java/org/redis/test/CacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/lock/Lock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/RedisApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/RedisApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/cache/CacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/cache/CacheService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/service/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis/src/main/java/org/redis/test/service/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/redis/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/src/test/java/org/redis/test/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/redis/src/test/java/org/redis/test/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/valid/src/main/java/org/test/web/CookieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/valid/src/main/java/org/test/web/CookieController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,15 +43,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/RedisApp.java">
+        <entry file="file://$PROJECT_DIR$/redis/src/test/java/org/redis/test/CacheTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="228">
+              <caret line="12" column="52" selection-start-line="10" selection-start-column="7" selection-end-line="12" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,85 +55,92 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/annotation/EnableCaching.class">
+        <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/concurrent/ConcurrentMapCache.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="62" column="65" lean-forward="true" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/cache/CacheService.java">
+        <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/lock/Lock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="283">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/Cache.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="1001" column="21" lean-forward="true" selection-start-line="1001" selection-start-column="21" selection-end-line="1001" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/BlockingQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3361">
+              <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/socket/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/Element.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+              <folding>
+                <element signature="e#4765#4766#0" expanded="true" />
+                <element signature="e#4817#4818#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/annotation/Cacheable.class">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            <state relative-caret-position="399">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java">
+        <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/config/CacheConfiguration.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/CacheManager.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/service/RedisService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="19" column="16" selection-start-column="2" selection-end-line="77" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-133">
+              <caret line="118" column="11" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -171,6 +171,7 @@
       <find>listener</find>
       <find>localhost:9092</find>
       <find>redis</find>
+      <find>Element</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,8 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/aCCOUTbOOK.java" />
-        <option value="$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/Client.java" />
         <option value="$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/IncomeBill.java" />
         <option value="$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/ConsumeBill.java" />
         <option value="$PROJECT_DIR$/visitor/src/main/java/org/visitor/service/HelloSay.java" />
@@ -220,20 +219,22 @@
         <option value="$PROJECT_DIR$/redis/src/main/java/RedisApp.java" />
         <option value="$PROJECT_DIR$/redis/src/test/java/RedisTest.java" />
         <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/RedisCacheConfig.java" />
-        <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java" />
         <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java" />
         <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java" />
         <option value="$PROJECT_DIR$/valid/src/main/java/org/test/web/CookieController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/redis/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/redis/src/test/java/org/redis/test/RedisTest.java" />
         <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/service/RedisService.java" />
         <option value="$PROJECT_DIR$/redis/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/redis/pom.xml" />
-        <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java" />
         <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/RedisApp.java" />
-        <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java" />
         <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/cache/CacheService.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java" />
+        <option value="$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java" />
+        <option value="$PROJECT_DIR$/redis/src/test/java/org/redis/test/RedisTest.java" />
+        <option value="$PROJECT_DIR$/redis/src/test/java/org/redis/test/CacheTest.java" />
+        <option value="$PROJECT_DIR$/redis/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java" />
+        <option value="$PROJECT_DIR$/socket/src/main/java/org/socket/lock/Lock.java" />
       </list>
     </option>
   </component>
@@ -356,8 +357,7 @@
               <item name="kafka" type="462c0819:PsiDirectoryNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
@@ -365,13 +365,70 @@
               <item name="redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,7 +441,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/kafka-producer/src/test/java/ExecutorFactory.java&#10;G:/JavaWeb/studyJava/kafka/kafka-producer/src/test/java/Main.java" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578322822335" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579444119490" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -438,7 +495,7 @@
     </option>
     <option name="contentProportion" value="0.16246684" />
   </component>
-  <component name="RunManager" selected="Spring Boot.RedisApp">
+  <component name="RunManager" selected="Application.Lock">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.socket.client.Client" />
       <module name="socket" />
@@ -465,12 +522,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.socket.server.Server" />
+    <configuration name="Lock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.socket.lock.Lock" />
       <module name="socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.socket.server.*" />
+          <option name="PATTERN" value="org.socket.lock.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -478,12 +535,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.redis.test.entity.TestController" />
-      <module name="redis" />
+    <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.socket.entity.User" />
+      <module name="socket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.redis.test.entity.*" />
+          <option name="PATTERN" value="org.socket.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -523,21 +580,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Server" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.CookieController" />
-      <item itemvalue="Application.TestController" />
+      <item itemvalue="Application.User" />
+      <item itemvalue="Application.Lock" />
       <item itemvalue="Bash.shell" />
       <item itemvalue="Spring Boot.ValidArgsApplication" />
       <item itemvalue="Spring Boot.RedisApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lock" />
+        <item itemvalue="Application.User" />
         <item itemvalue="Spring Boot.RedisApp" />
-        <item itemvalue="Application.TestController" />
         <item itemvalue="Application.CookieController" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -609,7 +666,9 @@
       <workItem from="1577880083800" duration="3020000" />
       <workItem from="1578204021465" duration="6698000" />
       <workItem from="1578318508233" duration="1637000" />
-      <workItem from="1578320176508" duration="2525000" />
+      <workItem from="1578320176508" duration="3765000" />
+      <workItem from="1578406120578" duration="1954000" />
+      <workItem from="1579438868859" duration="3724000" />
     </task>
     <task id="LOCAL-00001" summary="xx">
       <created>1565706706538</created>
@@ -709,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577448287445</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="socket编程">
+      <created>1578322836528</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1578322836528</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -745,7 +811,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159339000" />
+    <option name="totallyTimeSpent" value="166257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -758,9 +824,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18900804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.211126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -770,7 +835,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" x="22" y="221" width="1492" height="382" id="Run" order="2" weight="0.2266289" />
+      <window_info anchor="bottom" x="22" y="221" width="1492" height="382" id="Run" order="2" weight="0.20538244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42634562" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -780,10 +845,10 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5019531" side_tool="true" weight="0.5604396" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32577905" />
-      <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="bottom" id="Problems" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49804688" visible="true" weight="0.4674221" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49804688" weight="0.46676096" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -860,162 +925,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/producer/ProducerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-producer/src/test/java/ExecutorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/Bill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.visitor.entity">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.visitor.entity</OriginalElement>
-          <nodes>
-            <node x="139.0" y="80.0">org.visitor.entity.IncomeBill</node>
-            <node x="0.0" y="80.0">org.visitor.entity.ConsumeBill</node>
-            <node x="92.5" y="235.0">org.visitor.entity.Boss</node>
-            <node x="0.0" y="310.0">org.visitor.entity.Client</node>
-            <node x="0.5" y="235.0">org.visitor.entity.CPA</node>
-            <node x="94.25" y="0.0">org.visitor.entity.Bill</node>
-            <node x="211.5" y="155.0">org.visitor.entity.AccountBook</node>
-            <node x="0.0" y="155.0">org.visitor.entity.AccountBookViewer</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="org.visitor.entity.IncomeBill" target="org.visitor.entity.Bill">
-              <point x="0.0" y="-15.0" />
-              <point x="193.0" y="55.0" />
-              <point x="142.25" y="55.0" />
-              <point x="16.0" y="15.0" />
-            </edge>
-            <edge source="org.visitor.entity.ConsumeBill" target="org.visitor.entity.Bill">
-              <point x="0.0" y="-15.0" />
-              <point x="59.5" y="55.0" />
-              <point x="110.25" y="55.0" />
-              <point x="-16.0" y="15.0" />
-            </edge>
-            <edge source="org.visitor.entity.Boss" target="org.visitor.entity.AccountBookViewer">
-              <point x="0.0" y="-15.0" />
-              <point x="129.5" y="210.0" />
-              <point x="124.5" y="210.0" />
-              <point x="41.5" y="15.0" />
-            </edge>
-            <edge source="org.visitor.entity.CPA" target="org.visitor.entity.AccountBookViewer">
-              <point x="0.0" y="-15.0" />
-              <point x="36.5" y="210.0" />
-              <point x="41.5" y="210.0" />
-              <point x="-41.5" y="15.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-91.0" y="72.0" />
-          <SelectedNodes>
-            <node>org.visitor.entity.Bill</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/AccountBookViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/CPA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/ConsumeBill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/AccountBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/IncomeBill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visitor/src/main/java/org/visitor/entity/Boss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-producer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/ProducerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/RedisCacheConfig.java" />
-    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/data/spring-data-redis/2.1.9.RELEASE/spring-data-redis-2.1.9.RELEASE.jar!/org/springframework/data/redis/core/DefaultValueOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2660">
-          <caret line="161" column="32" selection-start-line="161" selection-start-column="32" selection-end-line="161" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/data/spring-data-redis/2.1.9.RELEASE/spring-data-redis-2.1.9.RELEASE.jar!/org/springframework/data/redis/connection/lettuce/LettuceExceptionConverter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1051,44 +960,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
           <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/valid/src/main/java/org/test/ValidException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1158,24 +1026,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/test/java/org/redis/test/RedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="20" column="9" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE.jar!/org/springframework/boot/autoconfigure/cache/CacheAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/concurrent/ConcurrentMapCacheManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1191,44 +1045,13 @@
         <state relative-caret-position="-171" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="47" column="41" lean-forward="true" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/concurrent/ConcurrentMapCache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/CacheManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/RedisApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1242,13 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/service/RedisService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="16" selection-start-column="2" selection-end-line="77" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/annotation/Cacheable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
@@ -1256,25 +1072,233 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java">
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/concurrent/ConcurrentMapCacheManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="97">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/ConcurrentMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/CacheManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/service/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="16" selection-start-column="2" selection-end-line="77" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-webmvc/5.1.5.RELEASE/spring-webmvc-5.1.5.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8759">
+          <caret line="509" selection-start-line="509" selection-end-line="509" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/concurrent/ConcurrentMapCache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="86" column="16" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/Cache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE.jar!/org/springframework/cache/annotation/CacheEvict.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/cache/CacheService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="380">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/entity/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/main/java/org/redis/test/C.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/test/java/org/redis/test/RedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="35" column="11" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/Ehcache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/CacheManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11210">
+          <caret line="674" column="17" selection-start-line="674" selection-start-column="17" selection-end-line="674" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/store/disk/DiskStore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="129" column="28" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/concurrent/BlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3361">
+          <caret line="179" column="17" selection-start-line="179" selection-start-column="17" selection-end-line="179" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/src/test/java/org/redis/test/CacheTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="52" selection-start-line="10" selection-start-column="7" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/config/CacheConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="118" column="11" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="127" column="11" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+          <folding>
+            <element signature="e#4765#4766#0" expanded="true" />
+            <element signature="e#4817#4818#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.2/ehcache-2.10.2.jar!/net/sf/ehcache/Cache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="1001" column="21" lean-forward="true" selection-start-line="1001" selection-start-column="21" selection-end-line="1001" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="62" column="65" lean-forward="true" selection-start-line="62" selection-start-column="65" selection-end-line="62" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket/src/main/java/org/socket/lock/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
