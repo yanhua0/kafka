@@ -70,7 +70,6 @@ public class CacheConfig implements CachingConfigurer {
                     sb.append("_");
                 }
             }
-            System.out.println(sb.toString());
             return sb.toString();
         };
     }
