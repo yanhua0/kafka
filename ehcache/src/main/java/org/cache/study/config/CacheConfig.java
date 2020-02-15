@@ -23,7 +23,7 @@ public class CacheConfig implements CachingConfigurer {
         net.sf.ehcache.config.Configuration configuration = new net.sf.ehcache.config.Configuration();
         configuration.setName(CacheConstant.DEFAULT);
         //如果要设置不同的最大和失效时间这里多次addCache就行了。
-        configuration.addCache(cacheConfiguration(CacheConstant.CACHE,10,60));
+        configuration.addCache(cacheConfiguration(CacheConstant.CACHE,10,5*60));
         return net.sf.ehcache.CacheManager.create(configuration);
     }
 
