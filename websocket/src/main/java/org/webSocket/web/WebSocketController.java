@@ -2,10 +2,12 @@ package org.webSocket.web;
 
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.webSocket.Test;
 import org.webSocket.service.server.WebSocketServer;
 
 import javax.annotation.Resource;
@@ -16,8 +18,8 @@ import java.util.concurrent.TimeUnit;
 
 @Controller
 public class WebSocketController {
-//    @Resource
-//    private SimpMessagingTemplate simpMessagingTemplate;
+    @Resource
+    private SimpMessagingTemplate simpMessagingTemplate;
     @Resource
     private WebSocketServer webSocketServer;
 
@@ -68,7 +70,7 @@ public class WebSocketController {
     //@SendTo("/topic/webSocketTopic")
     @ResponseBody
     public String sendToUser(String message) {
-       // simpMessagingTemplate.convertAndSendToUser("1", "/topic/webSocketTopic", message);
+      simpMessagingTemplate.convertAndSendToUser("1", "/topic/webSocketTopic", message);
         System.out.println("Send-Topic-Msg:" + message);
         return message;
     }
@@ -83,10 +85,12 @@ public class WebSocketController {
     @MessageMapping("/v2/chat")
     //有点类似于群聊
     @SendTo("/topic/webSocketTopic")
-    public String gameInfo(String message) {
+    public Test gameInfo(String message) {
         //simpMessagingTemplate.convertAndSend("/topic/webSocketTopic", message);
+        Test test=new Test();
+        test.setMs(message);
         System.out.println("群聊{}" + message);
-        return message;
+       return test;
     }
 
 }

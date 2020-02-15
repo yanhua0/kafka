@@ -1,15 +1,25 @@
 package org.rpc.config;
 
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
+@EnableScheduling
+@EnableAsync
 public class Task {
-    @Scheduled(cron ="*/5 * * * * ?")
+    private Integer count=0;
+    @Scheduled(cron ="*/3 * * * * ?")
+  //  @Async@EnableAsync同时使用
+    @Async
     public void s1() throws InterruptedException {
+
         System.out.println("任务11"+Thread.currentThread().getName());
         Thread.sleep(10000);
-        System.out.println("任务1"+Thread.currentThread().getName());
+       count++;
+       System.out.println(count);
     }
     @Scheduled(cron ="*/5 * * * * ?")
     public void s2() throws InterruptedException {

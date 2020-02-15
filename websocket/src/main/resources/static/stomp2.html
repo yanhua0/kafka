@@ -20,7 +20,7 @@
             function connectCallback(frame) {
                 // 连接成功时（服务器响应 CONNECTED 帧）的回调方法
                 setMessageInnerHTML("连接成功");
-                stompClient.subscribe('/topic/webSocketTopic', function (res) {
+                stompClient.subscribe('/user/'+2+'/topic/webSocketTopic', function (res) {
                     console.log(res.body);
                     setMessageInnerHTML("");
                     setMessageInnerHTML("你接收到的消息为:" + res.body);
