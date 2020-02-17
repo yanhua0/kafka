@@ -18,7 +18,7 @@ public class Task {
      */
     @Scheduled(cron = "0 0 0 * * ?")
     public void remove(){
-        ehCacheManager.getCache(CacheConstant.DEVICE_PREFIX).removeAll();
+        ehCacheManager.getCache(CacheConstant.CACHE).removeAll();
     }
 
 }
