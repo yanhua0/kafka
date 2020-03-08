@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="939c0fa3-b806-454a-a467-5528d93ed034" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ehcache/src/main/java/org/cache/study/service/CacheService2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ehcache/src/test/java/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/web/MainCom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/BaseSessionEventListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/SessionDisconnect.java" afterDir="false" />
+    <list default="true" id="939c0fa3-b806-454a-a467-5528d93ed034" name="Default Changelist" comment="ehcache的注解实现,删除日志">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ehcache/src/main/java/org/cache/study/config/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ehcache/src/main/java/org/cache/study/config/CacheConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ehcache/src/main/java/org/cache/study/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ehcache/src/main/java/org/cache/study/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/RpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/RpcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/config/ConfigTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/config/ConfigTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/config/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/config/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/web/RpcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/src/main/java/org/rpc/web/RpcController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/web/WebSocketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/web/WebSocketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/SessionDisconnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/SessionDisconnect.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,15 +48,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213883">
-              <caret line="11270" column="4" selection-start-line="11270" selection-start-column="4" selection-end-line="11270" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
@@ -90,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/BaseSessionEventListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="276">
+              <caret line="26" column="75" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/SessionDisconnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="323">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,8 +119,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/simp/stomp/StompHeaderAccessor.class">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="162" column="18" lean-forward="true" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+              <folding>
+                <element signature="e#6516#6517#0" expanded="true" />
+                <element signature="e#6583#6584#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/simp/stomp/StompCommand.class">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -391,7 +382,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/kafka-producer/src/test/java/ExecutorFactory.java&#10;G:/JavaWeb/studyJava/kafka/kafka-producer/src/test/java/Main.java" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583641193878" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583641927422" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.6" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SSM框架学习/zone" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -637,7 +628,7 @@
       <workItem from="1583377412507" duration="2401000" />
       <workItem from="1583497178012" duration="609000" />
       <workItem from="1583559244307" duration="5754000" />
-      <workItem from="1583637504496" duration="3024000" />
+      <workItem from="1583637504496" duration="3560000" />
     </task>
     <task id="LOCAL-00001" summary="xx">
       <created>1565706706538</created>
@@ -793,7 +784,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581942487738</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ehcache的注解实现,删除日志">
+      <created>1583641210922</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583641210922</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -829,7 +827,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227517000" />
+    <option name="totallyTimeSpent" value="228053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -844,7 +842,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18364611" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -948,13 +946,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/net/sf/ehcache/config/CacheConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2489">
-          <caret line="155" column="40" selection-start-line="155" selection-start-column="40" selection-end-line="155" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kafka-producer/src/main/java/org/kafka/test/config/KafkaConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1264,13 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/simp/stomp/StompHeaderAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/SessionDisconnectEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1302,6 +1286,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/simp/stomp/StompCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/simp/stomp/StompHeaderAccessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="162" column="18" lean-forward="true" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+          <folding>
+            <element signature="e#6516#6517#0" expanded="true" />
+            <element signature="e#6583#6584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/web/WebSocketController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1312,17 +1321,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websocket/src/main/resources/static/stomp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/BaseSessionEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="276">
+          <caret line="26" column="75" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1331,8 +1333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/websocket/src/main/java/org/webSocket/websocket/SessionDisconnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        <state relative-caret-position="323">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
