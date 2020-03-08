@@ -1,8 +1,9 @@
 package org.webSocket.web;
 
-import org.springframework.messaging.handler.annotation.MessageMapping;
-import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.Message;
+import org.springframework.messaging.handler.annotation.*;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.messaging.simp.stomp.StompHeaderAccessor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,10 +13,14 @@ import org.webSocket.service.server.WebSocketServer;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * stomp连接断开的判断
+ */
 @Controller
 public class WebSocketController {
     @Resource
@@ -85,10 +90,18 @@ public class WebSocketController {
     @MessageMapping("/v2/chat")
     //有点类似于群聊
     @SendTo("/topic/webSocketTopic")
-    public Test gameInfo(String message) {
+    public Test gameInfo(String mes,
+                         StompHeaderAccessor accessor, //所有消息头信息
+                         @Headers Map<String, Object> headers, //所有头部值
+                         @Header(name="simpSessionId") String sessionId, //指定头部的值 ，这里指sessionId
+                         Message message,   //完整消息，包含消息头和消息体（即header和body）
+                         @Payload String body) {
         //simpMessagingTemplate.convertAndSend("/topic/webSocketTopic", message);
+        System.out.println(message);
+        System.out.println(sessionId);
+        System.out.println(body);
         Test test=new Test();
-        test.setMs(message);
+        test.setMs(mes);
         System.out.println("群聊{}" + message);
        return test;
     }

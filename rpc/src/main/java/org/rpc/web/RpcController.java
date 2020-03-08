@@ -3,6 +3,7 @@ package org.rpc.web;
 import org.rpc.config.ReqUrl;
 import org.rpc.config.RpcBean;
 import org.rpc.config.RpcTest;
+import org.rpc.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,10 +26,19 @@ public class RpcController {
     private RestTemplate restTemplate;
     @Resource
     private RpcBean rpcBean;
+    @Resource
+    private User user;
 
     @GetMapping("/rpc")
     public Object r() {
-
+        user.setId(1);
+        System.out.println(user);
+        return rpcBean.toString();
+    }
+    @GetMapping("/rpc2")
+    public Object r3() {
+        user.setUsername("2");
+        System.out.println(user);
         return rpcBean.toString();
     }
 

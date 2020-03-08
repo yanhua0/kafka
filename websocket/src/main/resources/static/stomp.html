@@ -36,7 +36,7 @@
         function send() {
             var message = $("#content").val();
             var messageJson = JSON.stringify({ "content": message });
-            stompClient.send("/app/v2/chat", {}, messageJson);
+            stompClient.send("/app/v2/chat", { "content": "lala" }, messageJson);
             sendMessageInnerHTML("/app/v2/chat 你发送的消息:" + message);
         }
 

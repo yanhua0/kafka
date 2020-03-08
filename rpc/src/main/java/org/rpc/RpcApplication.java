@@ -13,3 +13,4 @@ public class RpcApplication extends SpringBootServletInitializer {
         SpringApplication.run(RpcApplication.class, args);
     }
 }
+

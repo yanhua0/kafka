@@ -19,11 +19,12 @@ import java.lang.reflect.Method;
 @Configuration
 public class CacheConfig implements CachingConfigurer {
     @Bean
-    public net.sf.ehcache.CacheManager ehCacheManager() {
+    public net.sf.ehcache.CacheManager ehCacheManagerBean() {
         net.sf.ehcache.config.Configuration configuration = new net.sf.ehcache.config.Configuration();
         configuration.setName(CacheConstant.DEFAULT);
         //如果要设置不同的最大和失效时间这里多次addCache就行了。
-        configuration.addCache(cacheConfiguration(CacheConstant.CACHE,10,5*60));
+        configuration.addCache(cacheConfiguration(CacheConstant.CACHE,0,5*60));
+        configuration.addCache(cacheConfiguration("cache2",0,5*60));
         return net.sf.ehcache.CacheManager.create(configuration);
     }
 
@@ -33,13 +34,15 @@ public class CacheConfig implements CachingConfigurer {
         cacheConfiguration.eternal(false);
         cacheConfiguration.persistence(new PersistenceConfiguration().strategy(PersistenceConfiguration.Strategy.LOCALTEMPSWAP));
         cacheConfiguration.memoryStoreEvictionPolicy(MemoryStoreEvictionPolicy.LFU);
+        cacheConfiguration.setMaxEntriesLocalDisk(100000);
+        cacheConfiguration.setTimeToIdleSeconds(3600);
         return cacheConfiguration;
     }
 
     @Override
     @Bean
     public CacheManager cacheManager() {
-        return new EhCacheCacheManager(ehCacheManager());
+        return new EhCacheCacheManager(ehCacheManagerBean());
     }
 
     @Override
@@ -53,7 +56,6 @@ public class CacheConfig implements CachingConfigurer {
      * @return
      */
     @Override
-    @Bean
     public KeyGenerator keyGenerator() {
         return (Object target, Method method, Object... params) -> {
             StringBuilder sb = new StringBuilder(16);
@@ -70,6 +72,7 @@ public class CacheConfig implements CachingConfigurer {
                     sb.append("_");
                 }
             }
+            System.out.println(sb.toString());
             return sb.toString();
         };
     }
