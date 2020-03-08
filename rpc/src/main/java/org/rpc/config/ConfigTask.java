@@ -1,6 +1,7 @@
 package org.rpc.config;
 
 import org.rpc.entity.User;
+import org.rpc.service.DealFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -40,5 +41,9 @@ public class ConfigTask {
     public User user(){
         User user=new User();
         return user;
+    }
+    @Bean
+    public DealFactory dealFactory(){
+        return new DealFactory();
     }
 }
