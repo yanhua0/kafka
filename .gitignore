@@ -6,7 +6,8 @@
 .idea/
 *.iml
 webSocket/target/
-out
+out/
+target/
 gen
 kafka-consumer/src/test/
 kafka-consumer/target/classes/org/kafka/test/testMain/
