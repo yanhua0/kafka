@@ -30,10 +30,10 @@ public class RpcController {
     private User user;
 
     @GetMapping("/rpc")
-    public Object r() {
+    public RpcBean r() {
         user.setId(1);
         System.out.println(user);
-        return rpcBean.toString();
+        return rpcBean;
     }
     @GetMapping("/rpc2")
     public Object r3() {

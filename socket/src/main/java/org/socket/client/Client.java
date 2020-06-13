@@ -13,12 +13,15 @@ public class Client {
      */
     public static void main(String[] args) {
         try {
-            //创建Socket对象
-            Socket socket=new Socket("localhost",8888);
 
-            //根据输入输出流和服务端连接
-            OutputStream outputStream=socket.getOutputStream();//获取一个输出流，向服务端发送信息
-        ObjectOutputStream objectOutputStream=new ObjectOutputStream(outputStream);
+      while (true){
+          //创建Socket对象
+          Socket socket=new Socket("localhost",8888);
+
+          //根据输入输出流和服务端连接
+          OutputStream outputStream=socket.getOutputStream();//获取一个输出流，向服务端发送信息
+          ObjectOutputStream objectOutputStream=new ObjectOutputStream(outputStream);
+          Thread.sleep(1000);
 
             List<User> users=new ArrayList<>();
             User user=new User();
@@ -42,12 +45,9 @@ public class Client {
                 System.out.println("客户端接收服务端发送信息："+info);
             }
 
-            //关闭相对应的资源
-            bufferedReader.close();
-            inputStream.close();
-            //printWriter.close();
-            outputStream.close();
-            socket.close();
+
+
+      }
         } catch (Exception e) {
             System.out.println(e);
         }

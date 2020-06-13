@@ -12,6 +12,7 @@ public class TestCachedThreadPool {
     public static int j=0;
 
         public static void main(String[] args) {
+
            Test test= test1 -> System.out.println("111");
            test.print(() -> System.out.println("213"));
            Test1 test1=null;
