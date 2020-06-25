@@ -1,0 +1,9 @@
+  int addPicture = workbook.addPicture(bytes, workbook.PICTURE_TYPE_PNG);
+            Drawing drawing = s.createDrawingPatriarch();
+            CreationHelper helper = workbook.getCreationHelper();
+            ClientAnchor anchor = helper.createClientAnchor();
+            anchor.setAnchorType(0);
+            anchor.setRow1(i);
+            anchor.setCol1(2);
+            Picture picture = drawing.createPicture(anchor, addPicture);
+            picture.resize();
