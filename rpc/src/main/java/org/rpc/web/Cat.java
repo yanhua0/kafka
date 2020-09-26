@@ -5,9 +5,6 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Data
-public class Test {
-
-
-    private int key;
-    private int value;
+public class Cat {
+    private String name;
 }

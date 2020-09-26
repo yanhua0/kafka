@@ -6,6 +6,8 @@ import net.sf.ehcache.config.PersistenceConfiguration;
 import net.sf.ehcache.store.MemoryStoreEvictionPolicy;
 import org.cache.study.config.CacheConstant;
 
+import java.util.UUID;
+
 public class Cache {
     public static CacheConfiguration build(String name,Integer maxEntries,Integer time){
         CacheConfiguration cacheConfiguration = new CacheConfiguration(name, maxEntries);
@@ -28,12 +30,12 @@ public class Cache {
        // c.addCache(build("test2",1,20));
 
 
+        while(true){
+            cacheManager.getCache("test1").put(new Element(UUID.randomUUID().toString(),UUID.randomUUID().toString()));
+        }
 
-        cacheManager.getCache("test1").put(new Element("1","2"));
-        cacheManager.getCache("test1").put(new Element("3","2"));
-        cacheManager.getCache("test1").put(new Element("4","2"));
-        Thread.sleep(60000);
-System.out.println(cacheManager.getCache("test1").get("4").getObjectValue());
+
+
         //cacheManager.getCache("test1").removeAll();
 //        CacheManager cc=CacheManager.newInstance(c);
 //        cc.getCache("test2").put(new Element("3","4"));

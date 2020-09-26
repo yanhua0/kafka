@@ -10,7 +10,7 @@ import java.io.*;
 import java.util.Properties;
 
 public class Producer {
-    public static String topic = "test";//定义主题
+    public static String topic = "SafetyPlatform";//定义主题
  public static byte[] b2;
     public static void main(String[] args) throws InterruptedException, IOException {
         Properties p = new Properties();

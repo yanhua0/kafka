@@ -10,7 +10,7 @@ spring:
       enabled: true
       additional-paths: src/main/java
   kafka:
-    bootstrap-servers: 49.234.8.168:9092
+    bootstrap-servers: 127.0.0.1:9092
     consumer:
       enable-auto-commit: false
       auto-commit-interval: 100ms
@@ -18,7 +18,14 @@ spring:
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       properties:
         session.timeout.ms: 15000
+
       group-id: zjl
+
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      concurrency: 1
 
 
 
