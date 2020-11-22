@@ -44,7 +44,7 @@ public class CacheManagerFactory {
     }
 
     /**
-     * replicateUpdatesViaCopy 为false时候,某结点修改其他所有的结点的服务清楚缓存。net.sf.ehcache.distribution.RMISynchronousCacheReplicator定义
+     * replicateUpdatesViaCopy 为false时候,某结点修改其他所有的结点的服务清楚缓存。net.sf.ehcache.distribution.RMISynchronousCacheReplicator.notifyElementUpdated()定义
      * @param name
      * @return
      */
