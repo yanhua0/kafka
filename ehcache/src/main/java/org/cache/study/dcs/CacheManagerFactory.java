@@ -7,6 +7,9 @@ import net.sf.ehcache.config.FactoryConfiguration;
 import net.sf.ehcache.config.PersistenceConfiguration;
 import net.sf.ehcache.store.MemoryStoreEvictionPolicy;
 
+/**
+ * Ehcache 分布式缓存的配置方法
+ */
 public class CacheManagerFactory {
     public static CacheManager createDCS(String name,String port,String rmi){
         CacheManager cacheManager=create(name,port,rmi);
