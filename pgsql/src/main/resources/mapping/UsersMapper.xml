@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjl.pgsql.mapper.UsersMapper">
+
+    <resultMap id="BaseResultMap" type="com.zjl.pgsql.entity.Users">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="report_time" jdbcType="TIMESTAMP" property="reportTime"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        select * from users
+    </select>
+    <select id="groupByTime" resultType="com.zjl.pgsql.dto.UsersResDTO">
+        select left_table.join_time as time,coalesce(real_table.count,0) as count from
+        (select to_char(to_date(#{startTime},
+        #{datePatternEnums.datePattern})::timestamp+(full_time_table.add_num||#{datePatternEnums.addUnit})::interval,#{datePatternEnums.datePattern})
+        as join_time from generate_series(0,
+        -- 根据年、月、日统计修改做差方法
+        <if test="datePatternEnums.code==2">
+            date(#{endTime})-date(#{startTime})
+        </if>
+        <if test="datePatternEnums.code==1">
+            (extract(year from age(#{endTime},#{startTime})) * 12  + extract(MONTH from age(#{endTime},#{startTime})))::int
+        </if>
+        )
+        as full_time_table(add_num)
+        )
+        as left_table
+        left join (
+        select count(*),to_char(report_time, #{datePatternEnums.datePattern}) as report_time from users group by
+        report_time) real_table
+        on left_table.join_time = real_table.report_time
+    </select>
+
+</mapper>

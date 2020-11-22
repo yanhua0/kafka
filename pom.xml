@@ -30,6 +30,8 @@
         <module>ehcache</module>
         <module>jvm-sandbox</module>
         <module>excel</module>
+        <module>netty</module>
+        <module>pgsql</module>
     </modules>
 
     <dependencies>

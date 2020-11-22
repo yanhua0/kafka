@@ -3,8 +3,10 @@ package org.test.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.test.entity.Users;
+import org.test.inter.Req;
 
 @Configuration
 public class Config implements WebMvcConfigurer {
@@ -13,6 +15,12 @@ public class Config implements WebMvcConfigurer {
         Users u = new Users();
         u.setPassword("1231234");
         return u;
+    }
+
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new Req()).addPathPatterns("/**");
     }
 
     @Override
