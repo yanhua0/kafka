@@ -1,0 +1,32 @@
+private IOUtil() {
+ }
+
+ public static void closeMappedByteBuffer(final MappedByteBuffer byteBuffer) {
+     if (byteBuffer == null) {
+         return;
+     }
+
+     if (byteBuffer != null) {
+         AccessController.doPrivileged(
+                 new PrivilegedAction<Object>() {
+                     @Override
+                     public Object run() {
+                         try {
+                             Method cleanerMethod = byteBuffer.getClass().getMethod("cleaner", new Class[0]);
+                             cleanerMethod.setAccessible(true);
+                             sun.misc.Cleaner cleaner = (sun.misc.Cleaner) cleanerMethod.invoke(byteBuffer,
+                                     new Object[0]);
+                             cleaner.clean();
+                         } catch (NoSuchMethodException e) {
+                             LOGGER.error("error occurred when clean mapped byte buffer", e);
+                         } catch (InvocationTargetException e) {
+                             LOGGER.error("error occurred when clean mapped byte buffer", e);
+                         } catch (IllegalAccessException e) {
+                             LOGGER.error("error occurred when clean mapped byte buffer", e);
+                         }
+                         return null;
+                     }
+                 }
+         );
+     }
+ }

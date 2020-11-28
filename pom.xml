@@ -28,10 +28,10 @@
         <module>redis</module>
         <module>socket</module>
         <module>ehcache</module>
-        <module>jvm-sandbox</module>
         <module>excel</module>
         <module>netty</module>
         <module>pgsql</module>
+        <module>file</module>
     </modules>
 
     <dependencies>
