@@ -16,12 +16,12 @@
         var stompClient = Stomp.over(socket);
         stompClient.debug = null;
         // 向服务器发起websocket连接并发送CONNECT帧
-        stompClient.connect({},
+        stompClient.connect({"user-id":1},
             function connectCallback(frame) {
                 // 连接成功时（服务器响应 CONNECTED 帧）的回调方法
                 setMessageInnerHTML("连接成功");
                 //后台需要配置/user
-                stompClient.subscribe('/user/'+1+'/topic/webSocketTopic', function (res) {
+                stompClient.subscribe('/user/1', function (res) {
                     console.log(res.body);
                     setMessageInnerHTML("");
                     setMessageInnerHTML("1用户接收到的消息为:" + res.body);

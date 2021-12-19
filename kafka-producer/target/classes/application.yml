@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8081
   servlet:
     context-path: /producer
 spring:
@@ -10,21 +10,40 @@ spring:
       enabled: true
       additional-paths: src/main/java
 
-  kafka:
-    bootstrap-servers: 172.20.90.28:9092
-    producer:
-      retries: 0
-      batch-size: 16384
-      buffer-memory: 33554432
-      key-serializer: org.apache.kafka.common.serialization.BytesDeserializer
-      value-serializer: org.apache.kafka.common.serialization.BytesDeserializer
-    consumer:
-      enable-auto-commit: false
-      auto-commit-interval: 100ms
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      properties:
-        session.timeout.ms: 15000
-      group-id: zjl
-      concurrency: 2
+#  kafka:
+#    bootstrap-servers: 127.0.0.1:9092
+#    consumer:
+#      enable-auto-commit: false
+#      auto-commit-interval: 100ms
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      properties:
+#        session.timeout.ms: 15000
+#      group-id: zjl
+#      concurrency: 2
+##kafka单独的配置
+kafka:
+  # 指定kafka 代理地址，可以多个
+  bootstrap-servers: 127.0.0.1:9092
+  #字节数组的 代理地址
+  byte-bootstrap-servers: ${kafka.bootstrap-servers}
+  replication-factor:
+    single: 1
+    cluster: 2
+  create-map:
+    bss-alarm-event: 10
+    uss-ams-event: 2
+    alarm-event-topic: 5
+    bss-forward-event: 1
+    alarm-forward-event: 1
+  producer:
+    retries: 0
+    # 每次批量发送消息的数量
+    batch-size: 16384
+    # 缓存容量
+    buffer-memory: 33554432
+    # 指定消息key和消息体的编解码方式
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    max-request-size: 10485760
 

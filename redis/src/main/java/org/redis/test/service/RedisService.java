@@ -5,14 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
 
 @Component
 public class RedisService {
 
     @Autowired
-    private RedisTemplate<String, Serializable> redisTemplate;
+    private RedisTemplate<String, String> redisTemplate;
 
     /**
      * 读取缓存
@@ -23,7 +22,7 @@ public class RedisService {
     public String get(final String key) {
         String value="";
         try {
-           value=redisTemplate.opsForValue().get(key).toString();
+           value= redisTemplate.opsForValue().get(key);
             JSONObject.toJSONString(value);
             JSONObject.toJSONString(value);
         } catch (Exception e) {
@@ -55,7 +54,10 @@ public class RedisService {
     public boolean getAndSet(final String key, String value) {
         boolean result = false;
         try {
-            redisTemplate.opsForValue().getAndSet(key, value);
+            //更新并且返回旧的value;
+           String v= redisTemplate.opsForValue().getAndSet(key, value);
+           System.out.println(v);
+           System.out.println("Va="+redisTemplate.opsForValue().get(key));
             result = true;
         } catch (Exception e) {
             e.printStackTrace();

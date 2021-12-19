@@ -2,9 +2,7 @@ package org.redis.test.entity;
 
 import org.redis.test.cache.CacheService;
 import org.redis.test.service.RedisService;
-import org.springframework.cache.CacheManager;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -17,26 +15,15 @@ public class TestController {
     private RedisService redisService;
     @Resource
     private CacheService cacheService;
-    @Resource
-    private CacheManager cacheManager;
 
-    @GetMapping("/redis/{id}")
-    public void redis(@PathVariable("id") Integer id) {
-        redisService.set("redis_key", "123333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333");
-        ExecutorService executorService = Executors.newFixedThreadPool(1);
-        while (true){
-        for (int i = 0; i < id; i++) {
-            executorService.execute(() -> {
-                long start = System.currentTimeMillis();
-                redisService.get("redis_key");
-                long e = System.currentTimeMillis();
-                if (e - start > 10)
-                    System.out.println(e - start);
-            });
-        }
-        }
+    @GetMapping("/redis/test")
+    public void get(String key, String value) {
+        redisService.getAndSet(key, value);
     }
-
+    @GetMapping("/redis")
+    public String get(String key) {
+       return redisService.get(key);
+    }
     @GetMapping("/cache")
     public String ss(int s) {
         ExecutorService executorService = Executors.newFixedThreadPool(1000);

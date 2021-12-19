@@ -1,0 +1,93 @@
+{
+    "rezepte": [
+        {
+            "name": "Hummus",
+            "portions": 6,
+            "Category": "Vorspeise",
+            "instructions": "Die Kichererbsen abgießen, die Knoblauchzehen schälen und den Saft der Zitrone auspressen. Kichererbsen, Tahin, Knoblauch und Zitronensaft in einen Mixer geben und pürieren. Nach und nach Öl dazugeben. Nach Belieben mit Kreuzkümmel verfeinern.",
+            "ingredients": [
+                {
+                    "name": "Kichererbsen aus der Dose",
+                    "quantity": "300",
+                    "unit": "g"
+                },
+                {
+                    "name": "Knoblauchzehen",
+                    "quantity": "2",
+                    "unit": ""
+                },
+                {
+                    "name": "Tahin",
+                    "quantity": "3",
+                    "unit": "EL"
+                },
+                {
+                    "name": "Olivenöl",
+                    "quantity": "8",
+                    "unit": "EL"
+                },
+                {
+                    "name": "Kreuzkümmel",
+                    "quantity": "1",
+                    "unit": "TL"
+                }
+            ]
+        },
+        {
+            "name": "Penne All'Arrabbiata",
+            "portions": 4,
+            "Category": "Hauptspeise",
+            "instructions": "Einen Topf mit Wasser für die Pasta aufsetzen. Die Tomaten mit einer Gabel zerdrücken. Die Kerne der Chilischoten entfernen und die Schoten fein hacken. Knoblauchzehe schälen. Olivenöl in eine Pfanne geben, Knoblauch und Chili bei mittlerer Hitze darin schwitzen. Nach ein paar Minuten die Tomaten und ausreichend Salz hinzufügen, einen Deckel auflegen und köcheln lassen. Die Pasta in den Topf geben, sobald das Wasser köchelt. Nach der angegebenen Kochzeit abgießen. Die Knoblauchzehe aus der Sauce entfernen und die Pasta in der Pfanne mit der Sauce vermischen.",
+            "ingredients": [
+                {
+                    "name": "Penne",
+                    "quantity": "400",
+                    "unit": "g"
+                },
+                {
+                    "name": "Knoblauchzehe",
+                    "quantity": "1",
+                    "unit": ""
+                },
+                {
+                    "name": "geschälte Tomaten aus der Dose",
+                    "quantity": "380",
+                    "unit": "g"
+                },
+                {
+                    "name": "getrocknete Chilischoten",
+                    "quantity": "3",
+                    "unit": ""
+                },
+                {
+                    "name": "Olivenöl",
+                    "quantity": "3",
+                    "unit": "EL"
+                }
+            ]
+        },
+        {
+            "name": "Nice Cream mit Himbeeren",
+            "portions": 3,
+            "Category": "Dessert",
+            "instructions": "Zuerst die Himbeeren und den Ahornsirup in einen Mixer geben und fein pürieren. Dann die Bananen zugeben und auf niedriger Stufe weiter pürieren, bis die gewünschte Konsistenz erreicht ist.",
+            "ingredients": [
+                {
+                    "name": "Bananen geschält, kleingeschnitten, gefroren",
+                    "quantity": "3",
+                    "unit": ""
+                },
+                {
+                    "name": "frische Himbeeren",
+                    "quantity": "125",
+                    "unit": "g"
+                },
+                {
+                    "name": "Ahornsirup",
+                    "quantity": "1",
+                    "unit": "EL"
+                }
+            ]
+        }
+    ]
+}

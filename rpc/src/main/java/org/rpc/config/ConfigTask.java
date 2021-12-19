@@ -7,6 +7,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConfigTask {
+//    @Value("#{${test:{http://123.2.2.2}}")
+//    private String s;
+
+
     /**
      * 指定一个@Scheduled方法的异步执行的线程数量,非异步执行配置无用
      * @return
@@ -27,6 +31,7 @@ public class ConfigTask {
 
     /**
      * taskScheduler指定@Scheduled注解方法的线程数量
+     *
      * @return
      */
 //    @Bean
@@ -38,12 +43,13 @@ public class ConfigTask {
 //        return taskScheduler;
 //    }
     @Bean
-    public User user(){
-        User user=new User();
+    public User user() {
+        User user = new User();
         return user;
     }
+
     @Bean
-    public DealFactory dealFactory(){
+    public DealFactory dealFactory() {
         return new DealFactory();
     }
 }

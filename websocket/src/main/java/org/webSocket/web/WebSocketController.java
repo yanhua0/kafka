@@ -60,7 +60,7 @@ public class WebSocketController {
     //@SendTo("/topic/webSocketTopic")
     @ResponseBody
     public String sendToTopic(String message) {
-     //   simpMessagingTemplate.convertAndSend("/topic/webSocketTopic", message);
+  simpMessagingTemplate.convertAndSend("/topic/webSocketTopic", message);
         System.out.println("Send-Topic-Msg:" + message);
         return message;
     }

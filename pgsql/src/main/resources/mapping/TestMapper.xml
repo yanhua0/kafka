@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjl.pgsql.mapper.TestMapper">
+
+    <resultMap id="BaseResultMap" type="com.zjl.pgsql.entity.Test">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="uuid" jdbcType="VARCHAR" property="uuid"/>
+        <result column="obj" jdbcType="OTHER" property="obj"
+                javaType="com.fasterxml.jackson.databind.JsonNode"
+                typeHandler="com.zjl.pgsql.mapper.handler.JsonTypeHandler"/>
+    </resultMap>
+
+
+</mapper>
