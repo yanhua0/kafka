@@ -1,6 +1,7 @@
 package org.rpc.web;
 
 import org.rpc.config.ReqUrl;
+import org.rpc.config.Rpc;
 import org.rpc.config.RpcBean;
 import org.rpc.config.RpcTest;
 import org.rpc.entity.User;
@@ -28,11 +29,14 @@ public class RpcController {
     private RpcBean rpcBean;
     @Resource
     private User user;
-
+    @Resource
+    private Rpc rpc;
     @GetMapping("/rpc")
     public String r() {
-      //  throw new RuntimeException("2");
-        return "OK";
+
+
+            rpc.restTemplate();
+       return "";
     }
     @GetMapping("/rpc2")
     public Object r3() {

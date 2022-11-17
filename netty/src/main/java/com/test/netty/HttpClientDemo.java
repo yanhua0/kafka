@@ -14,7 +14,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.IOException;
 
 public class HttpClientDemo {
-    public static void main(String[] args) throws ClientProtocolException,
+    public static void main(String[] args) throws
             IOException {
         DefaultHttpClient httpclient = new DefaultHttpClient();
         HttpHost proxy = new HttpHost("0.0.0.0",

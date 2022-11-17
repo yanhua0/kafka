@@ -15,9 +15,9 @@ public class Response2 {
                 request = socket.recv(0);//接收的客户端数据
                 String getData=new String(request);
                 if (getData.equals("getSingle")) {
-                    socket.send("OK".toString(),1);
+                    socket.send("OK",1);
                 }else{
-                    socket.send("error".toString(),1);
+                    socket.send("error",1);
                 }
 
             } catch (ZMQException e) {

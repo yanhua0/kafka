@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.test.dynamic.mapper.DynamicMapper">
+
+    <!--    <insert id="insertListMap">-->
+    <!--        <bind name="map" value="list.get(0)"/>-->
+    <!--        INSERT INTO-->
+    <!--        ${tableName}-->
+    <!--        <foreach collection="map.entrySet()" item="value" open="(" separator="," close=")" index="key">-->
+    <!--            ${key}-->
+    <!--        </foreach>-->
+    <!--        VALUES-->
+    <!--        <foreach collection="list" item="map" separator=",">-->
+    <!--            <foreach collection="map.entrySet()" index="key" item="value" open="(" separator="," close=")">-->
+    <!--                #{value}-->
+    <!--            </foreach>-->
+    <!--        </foreach>-->
+
+    <!--    </insert>-->
+    <insert id="insertListMap">
+        <bind name="map" value="list.get(0)"/>
+        insert all
+        <foreach collection="list" item="map" separator="">
+            into ${tableName}
+            <foreach collection="map.entrySet()" index="key" item="value" open="(" separator="," close=")">
+                ${key}
+            </foreach>
+            values
+            <foreach collection="map.entrySet()" index="key" item="value" open="(" separator="," close=")">
+                #{value}
+            </foreach>
+        </foreach>
+        select 1 from dual
+    </insert>
+    <update id="updateListMap">
+        begin
+        <foreach collection="list" item="map" separator=";">
+            update ${tableName}
+            set
+            <foreach collection="map.entrySet()" index="key" item="value" separator=",">
+                <if test="idKey!=key">
+                    ${key}=#{value}
+                </if>
+            </foreach>
+            where ${idKey} = ${map.get(idKey)}
+        </foreach>
+        ;end;
+    </update>
+
+    <delete id="deleteByIds">
+        update ${tableName} set
+        <foreach collection="setMap.entrySet()" index="key" item="value" separator=",">
+            ${key}=#{value}
+        </foreach>
+        where ${idKey} in
+        <foreach collection="list" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+</mapper>
+

@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 
 public class Client {
-    public static void main(String args[]){
+    public static void main(String[] args){
         try {
 //            ZContext context= new ZContext()
             ZMQ.Context context = ZMQ.context(1);

@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        #hostname: 127.0.0.1
+        service-name: zjl
+        instance-id: instance-8001
+        health-check-path: /health
+        tags: name=zjl
+
+

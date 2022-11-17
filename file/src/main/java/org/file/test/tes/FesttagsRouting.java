@@ -8,7 +8,7 @@ public class FesttagsRouting {
 
     public static int x=10;
     public static int y=10;
-    public static Karte reisekarte[][] = new Karte[x][y];
+    public static Karte[][] reisekarte = new Karte[x][y];
 
     public class Karte {
         String rahmen;

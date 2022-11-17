@@ -28,9 +28,7 @@ public class RedisLock {
                 && Long.parseLong(currentValue) < System.currentTimeMillis()) {
             //获取上一个锁的时间，锁过期后，GETSET将原来的锁替换成新锁
             String oldValue = String.valueOf(redisTemplate.opsForValue().getAndSet(key, value));
-            if (!StringUtils.isEmpty(oldValue) && oldValue.equals(currentValue)) {
-                return true;
-            }
+            return !StringUtils.isEmpty(oldValue) && oldValue.equals(currentValue);
         }
 
         return false;//拿到锁的就有执行权力，拿不到的只有重新再来，重新再来只得是让用户手动继续抢单

@@ -3,7 +3,7 @@ package org.kafka.test.zeromq;
 import org.zeromq.ZMQ;
 
 public class Request2 {
-    public static void main(String args[]) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         ZMQ.Context context = ZMQ.context(1);
         ZMQ.Socket socket = context.socket(ZMQ.REQ);
 

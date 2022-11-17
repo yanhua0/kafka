@@ -1,0 +1,17 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /websocket
+spring:
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        max-active: 80
+        max-wait: 5
+        max-idle: 8
+        min-idle: 0
+    timeout: 2000

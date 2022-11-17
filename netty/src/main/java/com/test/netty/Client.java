@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Client {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //1.定义服务类
         Bootstrap clientBootstap = new Bootstrap();
 

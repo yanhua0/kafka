@@ -14,6 +14,7 @@ public class KafkaConsumer {
     @KafkaListener(topics = {"SafetyPlatform"},groupId = "xx")
     public void receiveMessage(String message){
         System.out.println("消费者1"+message);
+      //  ConsumerConfig.Max
 
     }
 

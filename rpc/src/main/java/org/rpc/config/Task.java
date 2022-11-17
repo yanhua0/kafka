@@ -13,6 +13,7 @@ import java.util.concurrent.Executors;
 @EnableScheduling
 @EnableAsync
 public class Task {
+
     private Integer count=0;
    // @Scheduled(cron ="*/5 * * * * ?")
   //  @Async@EnableAsync同时使用

@@ -32,6 +32,12 @@
         <module>netty</module>
         <module>pgsql</module>
         <module>file</module>
+        <module>thrift</module>
+        <module>consul</module>
+        <module>con2</module>
+        <module>dynamicSql</module>
+        <module>websocket-dcs</module>
+        <module>websocket-dcs/w2</module>
     </modules>
 
     <dependencies>

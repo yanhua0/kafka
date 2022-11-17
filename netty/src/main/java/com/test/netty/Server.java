@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.concurrent.TimeUnit;
 @Slf4j
 public class Server {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         log.info("正在启动服务器");
         int processors = Runtime.getRuntime().availableProcessors();
         NioEventLoopGroup boss = new NioEventLoopGroup();
