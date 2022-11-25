@@ -7,7 +7,7 @@ import java.util.Map;
 
 public interface DynamicMapper {
 
-    //void insertListMap(@Param("tableName") String tableName,@Param("list") List<Map<String,String>> list);
+    void insertListMapMysql(@Param("tableName") String tableName,@Param("list") List<Map<String,Object>> list);
 
     void insertListMap(@Param("tableName") String tableName,@Param("list") List<Map<String,Object>> list);
 

@@ -38,6 +38,7 @@
         <module>dynamicSql</module>
         <module>websocket-dcs</module>
         <module>websocket-dcs/w2</module>
+        <module>drools-project</module>
     </modules>
 
     <dependencies>

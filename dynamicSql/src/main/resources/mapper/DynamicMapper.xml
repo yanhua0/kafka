@@ -3,21 +3,21 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.test.dynamic.mapper.DynamicMapper">
 
-    <!--    <insert id="insertListMap">-->
-    <!--        <bind name="map" value="list.get(0)"/>-->
-    <!--        INSERT INTO-->
-    <!--        ${tableName}-->
-    <!--        <foreach collection="map.entrySet()" item="value" open="(" separator="," close=")" index="key">-->
-    <!--            ${key}-->
-    <!--        </foreach>-->
-    <!--        VALUES-->
-    <!--        <foreach collection="list" item="map" separator=",">-->
-    <!--            <foreach collection="map.entrySet()" index="key" item="value" open="(" separator="," close=")">-->
-    <!--                #{value}-->
-    <!--            </foreach>-->
-    <!--        </foreach>-->
+        <insert id="insertListMapMysql">
+            <bind name="map" value="list.get(0)"/>
+            INSERT INTO
+            ${tableName}
+            <foreach collection="map.entrySet()" item="value" open="(" separator="," close=")" index="key">
+                ${key}
+            </foreach>
+            VALUES
+            <foreach collection="list" item="map" separator=",">
+                <foreach collection="map.entrySet()" index="key" item="value" open="(" separator="," close=")">
+                    #{value}
+                </foreach>
+            </foreach>
 
-    <!--    </insert>-->
+        </insert>
     <insert id="insertListMap">
         <bind name="map" value="list.get(0)"/>
         insert all

@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.lang.reflect.Method;
 import java.text.DateFormat;
 import java.util.*;
 
@@ -40,6 +41,7 @@ public class MybatisInterceptor implements Interceptor {
     }
     public Object intercept(Invocation invocation) throws Throwable {
         long start = System.currentTimeMillis();
+        Method method=invocation.getMethod();
 
         long end = System.currentTimeMillis();
         long time = (end - start);

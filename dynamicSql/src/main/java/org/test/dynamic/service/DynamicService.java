@@ -18,33 +18,29 @@ public class DynamicService {
     @PostConstruct
     public void init() {
 
-        String tableName = "xxx";
+        String tableName = "test";
         List<Map<String, Object>> list = new ArrayList<>();
         int k=30;
         for (int i = 15; i < 17; i++) {
             Map<String, Object> linkedHashMap = new LinkedHashMap<>();
 
-            linkedHashMap.put("DEPT_CODE",String.valueOf(i));
-            linkedHashMap.put("DEPT_NAME",String.valueOf(i));
-            linkedHashMap.put("CREATED_BY","test");
-            linkedHashMap.put("CREATION_DATE",new Date());
-            linkedHashMap.put("DEPT_ID",k);
+            linkedHashMap.put("device_name",String.valueOf(i));
+
             list.add(linkedHashMap);
             k++;
         }
 
-//        dynamicMapper.insertListMap(tableName, list);
+        testMapper.insertListMapMysql(tableName, list);
 //
 //
 //        dynamicMapper.updateListMap(tableName,list,"DEPT_ID");
 
-        List<Integer> ids=new ArrayList<>();
-        ids.add(30);
-        ids.add(31);
-        Map<String, Object> linkedHashMap = new LinkedHashMap<>();
-        linkedHashMap.put("DEPT_NAME","9992");
-        linkedHashMap.put("CREATED_BY","jarvis1231");
-        testMapper.deleteByIds(tableName, ids,"DEPT_ID",linkedHashMap);
+//        List<Integer> ids=new ArrayList<>();
+//        ids.add(30);
+//        ids.add(31);
+//        Map<String, Object> linkedHashMap = new LinkedHashMap<>();
+
+//        testMapper.deleteByIds(tableName, ids,"DEPT_ID",linkedHashMap);
 
     }
 
