@@ -3,3 +3,9 @@ DEPT_CODE
 DEPT_NAME
 CREATED_BY
 CREATION_DATE
+ ExecutorService executorService = new ThreadPoolExecutor(size, size,
+                0L, TimeUnit.MILLISECONDS,
+                new LinkedBlockingQueue<>(10),
+                ThreadFactoryBuilder.create().setNamePrefix("cjtest-async-").setUncaughtExceptionHandler(
+                        (t, e) -> log.error("{} error : {}", t.getName(), e.getMessage(), e)).build(),
+                new ThreadPoolExecutor.CallerRunsPolicy());
